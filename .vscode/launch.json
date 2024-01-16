@@ -1,6 +1,35 @@
 {
     "version": "0.2.0",
     "configurations": [
+      {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+      },
+
+    {
+      "name": "PowerShell Launch Script",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "enter path or command to execute e.g.: ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
+      "cwd": "${cwd}"
+    },Compress-Archive
+      {
+        "name": "PowerShell Run Pester Tests",
+        "type": "PowerShell",
+        "request": "launch",
+        "script": "Invoke-Pester",
+        "createTemporaryIntegratedConsole": true,
+        "attachDotnetDebugger": true
+      },
+        {
+          "name": "PowerShell Run Pester Tests",
+          "type": "PowerShell",
+          "request": "launch",
+          "script": "Invoke-Pester",
+          "createTemporaryIntegratedConsole": true,
+          "attachDotnetDebugger": true
+        },
         {
             "name": ".NET Core Launch",
             "type": "coreclr",
